@@ -1,1 +1,1 @@
-Hope to compile all libs into this folder
+Intended to compile all local libs into this folder
