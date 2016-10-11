@@ -32,7 +32,13 @@ add_library(    ofxOpenCv
 #TODO Libs for other OS (Win & Linux)
 if( APPLE )
     set(    ofxOpenCVLib "${OF_DIRECTORY}/addons/ofxOpenCv/libs/opencv/lib/opencv.a" )
-#target_link_libraries(
+
+        # prefered, so I can add all Libs in just one placeholder
+#    list(APPEND OFX_ADDON_LIBS
+#            ${OF_DIRECTORY}/addons/ofxOpenCv/libs/opencv/lib/osx/opencv.a
+#            )
+
+#    target_link_libraries(
 #        ${APP_NAME}
 #        "${OF_DIRECTORY}/addons/ofxOpenCv/libs/opencv/lib/opencv.a" )
 endif()
